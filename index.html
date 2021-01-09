@@ -1,0 +1,74 @@
+<html>
+<style type="text/css">
+body {
+	background: white ;
+	font-family: "Lato" ;
+}
+.login {
+	width:250px;
+	height: auto;
+	margin: auto;
+	border-top: 3px solid #900;
+	border-bottom: 3px solid #900;
+}
+.login input {
+	border: none;
+	background: #fff;
+  	font-family:Lato ;
+  	font-weight:700 ;
+	display: block;
+	height: 40px;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+}
+.login input[type="text"] {
+	border-radius: 7px 7px 0px 0px ;
+}
+.login input[type="password"] {
+	border-radius: 0px 0px 7px 7px ;
+}
+
+.login button {
+	width: 100%;
+	border-radius: 7px;
+	background: red;
+	text-decoration: center;
+	border: none;
+	color: #fff;
+  	margin-top:-5px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 13px;	
+	border-bottom: 3px solid #900;
+	cursor: pointer;
+}
+.head{
+	font-size: 20px;
+	color: #fff;
+	width:250px;
+	text-decoration: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	height: auto;
+	margin: auto;
+	margin-top: 13%;
+
+}
+</style>
+<body>
+
+	<form action="login.php" method="post">
+	<table class="head" bgcolor=red>
+		<tr><td colspan=2 align="center">Aplikasi Service</td></tr>
+		<tr><td></td></tr>
+	</table>
+	<table class="login">
+		<tr><td><input type="text" name="Id_Peg" size=10 placeholder="ID Pegawai">
+		<tr><td><input type="password" name="Password" size=10 placeholder="Password">
+		<tr></tr><tr></tr>
+		<tr><td colspan=3 align="center"><button>Log in</button></td></tr>
+	</table>
+</form>
